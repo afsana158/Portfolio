@@ -62,20 +62,7 @@ body{
     height: 100%;
     background-color: var(--secondary-color);
 }
-/* .vdo{
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
-.vdo video{
-    object-fit: cover;
-  width: 100%;
-  height: 100%; */
-/* } */
+
 .btn {
     background-image: var(--gradient-2);
     font: inherit;
@@ -88,6 +75,7 @@ body{
     border-radius: 6rem;
     cursor: pointer;
 }
+
 
 nav{
     position: fixed;
@@ -111,7 +99,7 @@ nav{
 .nav_bar a{
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--white);
 }
 
 .nav_menu_button{
@@ -129,7 +117,7 @@ nav{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-image: var(--gradient-2);
+    background-image: var(--gradient-1);
     transform: translateY(-100%);
     transition: 0.5s;
     z-index: -1;
@@ -153,6 +141,8 @@ nav{
 .nav_links a:hover{
     color: var(--white);
 }
+
+
 
 .header_container{
     padding-top: 8rem;
@@ -342,7 +332,7 @@ nav{
     color: var(--extra-light);
 }
 @media  (width > 768px){
-    nav{
+   nav{
         padding: 2rem 1rem;
         position: static;
         display: flex;
