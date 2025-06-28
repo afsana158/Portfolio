@@ -13,7 +13,6 @@
     --max-width: 1200px;
 
 }
-
 *{
     padding: 0;
     margin: 0;
@@ -63,7 +62,7 @@ body{
     background-color: var(--secondary-color);
 }
 
-.btn {
+.btn{
     background-image: var(--gradient-2);
     font: inherit;
     padding: 0.3rem 0.3rem;
@@ -75,7 +74,6 @@ body{
     border-radius: 6rem;
     cursor: pointer;
 }
-
 
 nav{
     position: fixed;
@@ -93,7 +91,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    background-image: var(--gradient-1);
+    background-image: var(--gradient-2);
 }
 
 .nav_bar a{
@@ -141,8 +139,6 @@ nav{
 .nav_links a:hover{
     color: var(--white);
 }
-
-
 
 .header_container{
     padding-top: 8rem;
@@ -219,13 +215,13 @@ nav{
     text-align: justify;
 }
 
-.cerificate a:hover , .project a:hover{
+.cerificate a:hover{
     color: var(--secondary-color);
     background: var(--gradient-2);
     box-shadow: rgba(255, 255, 255, 0.1);
 }
 
-.internship_container{
+.internship_container, .project_container{
     display: grid;
     gap: 1rem;
 }
@@ -233,14 +229,14 @@ nav{
 .internships{
     display: grid;
     gap: 1rem;
-    color: white;
+    color: var(--secondary-color);
     text-align: justify;
 }
 
-.internship a:hover{
+.internship a:hover, .project a:hover{
     color: var(--secondary-color);
     background: var(--gradient-2);
-    box-shadow: rgba(39, 142, 160, 0.1);
+    box-shadow: rgba(255, 255, 255, 0.1);
 }
 
 .options{
@@ -283,7 +279,6 @@ nav{
     cursor: pointer;
     justify-content: space-between;
 }
-
 .dropdown :hover{
     background: var(--gradient-2);
     box-shadow: rgba(39, 142, 160, 0.1);
@@ -291,13 +286,14 @@ nav{
 .arrow{
     margin-left: auto;
     transition: transform 0.3s ease;
-    /* float: right; */
 }
 
 .arrow.rotate{
     transform: rotate(180deg);
 }
-
+#c2 i{
+    margin-left: auto;
+}
 .contact_profiles{
     margin-top: 2rem;
     display: flex;
@@ -322,9 +318,6 @@ nav{
     box-shadow: rgba(255, 255, 255, 0.1);
 }
 
-#c2 i{
-    margin-left: auto;
-}
 .footer{
     padding: 1rem ;
     text-align: center;
@@ -332,7 +325,7 @@ nav{
     color: var(--extra-light);
 }
 @media  (width > 768px){
-   nav{
+    nav{
         padding: 2rem 1rem;
         position: static;
         display: flex;
@@ -412,7 +405,6 @@ nav{
     .about_content, .about_content :is(.sec_header, .description){
         text-align: left;
     }
-
     .dropdown-content a {
         font-size: 1.5rem;
         padding: 12px;
@@ -426,6 +418,5 @@ nav{
       .close-btn {
         font-size: 2.5rem;
     border-right: 20px;
-      }
+    }
 }
-
